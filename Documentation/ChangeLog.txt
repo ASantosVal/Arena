@@ -1,0 +1,71 @@
+-->mejoras planteadas:
+    -lista de usuarios
+    -enviar errores
+    
+
+----V1.1----
+***cliente***
+-Creadas imagenes de espera (esperar enemigo y esperar turno).
+-Corregido bug de envio de nombre vacio.
+
+***servidor***
+-Bugs varios de concurrencia solucionados.
+
+***autocliente***
+-Creado, implementado y terminado.
+
+----V1.0----
+***proyecto funcional***
+
+----V0.6----
+***cliente***
+-nombre y rol se envian correctamente (falta interpretacion del combate).
+-pasamos a usar un buffer global para envio y recibo de comandos y añadimos caracter de fin de comando (#).
+
+***servidor***
+-recepcion de nombre y role de usuarios 1 y 2 funciona correctamente(falta fase de combate).
+-pasamos a usar un buffer global para envio y recibo de comandos y añadimos caracter de fin de comando (#).
+-enviarOK() implementado y funcional.
+-evitado que los hijos queden como zombies.
+
+----V0.5----
+***cliente***
+-Bug menor corregido(en la lectura de role no se controlaba la cantidad de caracteres).
+-Implementadas createSocket(), sendUsername(), sendRole().
+   -errores: se envia string escesivamente larga.
+
+***servidor***
+-Implementados createSocket(), recieveUsername(), recieveRole().   
+
+----V0.4----
+***cliente***
+-Correciones GUI varias, importadas todas la imagenes necesarias hasta el momento.
+-Correciones en la creación de perfil (loops excesivos, recogida erronea de caracteres, etc.)
+-Añadida la opcion de desactivar la GUI.
+-Añadidas las constantes SOLDIER, WIZARD, RANGER, WINNER y LOOSER.
+-Creada estructura para "ficha de combate"(combatReport).
+-Codigo reordenado y comentado.
+
+***servidor***
+-Definidas tablas para el computo de daño.
+
+----V0.3-branch1.1----
+***cliente***
+-Funciones GUI movidas a GUI.h e importadas en el cliente.
+-Algunas las imagenes necesarias creadas(Faltan DEFEAT y VICTORY).
+-Funciones GUI casi acabadas.
+
+----V0.3-branch1----
+***cliente***
+-Inicio de la idea paralela de GUI via ASCII-Art. Impresion de imagenes funcional.
+-Directorio para imagenes definido (/Imagenes).
+
+----V0.3----
+***cliente***
+-Completada estructura de inicio y combate. (Compila)
+-Añadidas todas la funciones de comunicacion via sockets. (sin implementar)
+
+***servidor***
+-Implementada estructura basica y de combate.(Compila, falta calculo de daño)
+-Comenzado el diseño de la lista global de usuarios jugando y verificaciones. (parcialmente implementada)
+-Añadidas gran parte de las funciones de comunicacion via socket. (sin implementar)
